@@ -9,9 +9,6 @@ import { faThumbsUp, faThumbsDown } from '@fortawesome/free-solid-svg-icons'
 import { movies$ } from "../Data/movies";
 import Filter from "./Filter"
 
-function add() {
-  console.log("add");
-}
 export default class Movies extends Component {
   constructor() {
     super()
@@ -22,6 +19,11 @@ export default class Movies extends Component {
   componentDidMount() {
      movies$
      .then(data => this.setState({movies: data}))
+  }
+
+  IncrementItem = () => {
+    this.setState({ movies: this.state.likes + 1 });
+    console.log("add");
   }
 
   render() {
@@ -44,7 +46,7 @@ export default class Movies extends Component {
                       </Card.Text>
                       <Col className="d-flex mb-4 justify-content-around">
                         
-                          <Button onClick={add} style={{backgroundColor: "#382545", borderColor:"#9198e5"}}><FontAwesomeIcon icon={faThumbsUp} /></Button>
+                          <Button onClick={this.IncrementItem} style={{backgroundColor: "#382545", borderColor:"#9198e5"}}><FontAwesomeIcon icon={faThumbsUp} /></Button>
                           <p className="mr-5" style={{ color: "white"}}>{movie.likes}</p>
                        
 
