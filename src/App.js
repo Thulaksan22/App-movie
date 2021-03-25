@@ -11,7 +11,9 @@ function App() {
   return (
     <div className="App">
       <Movies/>
-      <PageButton/>
+      <div className="d-flex justify-content-center">
+        <PageButton/>
+      </div>
     </div>
   );
 }

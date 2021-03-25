@@ -9,7 +9,7 @@ export default class Filter extends Component {
     render() {
         return (
             <div>
-                <DropdownButton><FontAwesomeIcon icon={faFilter}/>
+                <DropdownButton><FontAwesomeIcon icon={faFilter} />
                     <Dropdown.Item>
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
                         <label class="form-check-label" for="flexCheckDefault">
@@ -18,27 +18,25 @@ export default class Filter extends Component {
                     </Dropdown.Item>
 
                     <Dropdown.Item>
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"/>
-                        <label class="form-check-label" for="flexCheckChecked">
-                            Comedy
-                        </label>
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"/>
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Comedy
+                    </label>
                     </Dropdown.Item>
 
                     <Dropdown.Item>
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"/>
-                        <label class="form-check-label" for="flexCheckChecked">
-                            Animation
-                        </label>
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"/>
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Animation
+                    </label>
                     </Dropdown.Item>
-
-
+                    
                     <Dropdown.Item>
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"/>
-                        <label class="form-check-label" for="flexCheckChecked">
-                            Drame
-                        </label>
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"/>
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Drame
+                    </label>
                     </Dropdown.Item>
-
                 </DropdownButton>
             </div>
         )
